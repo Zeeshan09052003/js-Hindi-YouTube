@@ -20,3 +20,31 @@ Functions
 
 // Java script is dynamic typed language
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (primitive), Heap (non-primitive)
+
+// Stack example:
+
+let myYoutubeName = "Zeeshandotcom"
+
+let anotherName = myYoutubeName
+anotherName = "Chaiaurcode"
+
+console.log(myYoutubeName); // would print Zeeshandotcom because original value doesn't change
+console.log(anotherName); // would print Chaiaurcode as changed later on
+
+// Heap example:
+
+let userOne = {
+        email: "user@google.com"
+}
+
+let userTwo = userOne
+userTwo.email = "zeeshan@google.com"
+
+console.log(userOne.email); // Would print zeeshan@google.com as original value would be changed
+console.log(userTwo.email); // would print zeeshan@google.com as value has been changed
+
+
+
